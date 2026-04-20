@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* WithRG Brand Colors — extracted from logo */
+  --color-wrg-blue: #3AACE2;
+  --color-wrg-blue-dark: #2490C8;
+  --color-wrg-orange: #F26B1D;
+  --color-wrg-orange-dark: #D85A10;
+  --color-wrg-green: #1D9C40;
+  --color-wrg-green-dark: #177A32;
+  --color-wrg-dark: #1A2744;
+  --color-wrg-ink: #2C3A52;
+  --color-wrg-muted: #64748B;
+  --color-wrg-light: #F0F8FD;
+  --color-wrg-border: #E2EDF5;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-wrg-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-wrg-dark);
+  letter-spacing: -0.025em;
+}
