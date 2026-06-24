@@ -119,7 +119,7 @@ Rooted in the vision of Rahul Gandhi and inspired by the enduring ideals of the 
                 </div>
                 {/* Floating badges */}
                 <div className="absolute -bottom-4 -left-4 bg-white border border-wrg-border rounded-xl px-4 py-2 shadow-md">
-                  <span className="text-wrg-green font-black text-sm">10,000+</span>
+                  <span className="text-wrg-green font-black text-sm">1,000+</span>
                   <span className="text-wrg-muted text-xs block">volunteers</span>
                 </div>
                 <div className="absolute -top-4 -right-4 bg-white border border-wrg-border rounded-xl px-4 py-2 shadow-md">

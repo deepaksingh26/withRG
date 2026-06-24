@@ -49,7 +49,7 @@ const milestones = [
   {
     year: "2024",
     title: "1000+ Dedicated Volunteers",
-    desc: "Grew into a nationwide volunteer network with over 10,000 participants and continued expansion into new districts.",
+    desc: "Grew into a nationwide volunteer network with over 1,000 participants and continued expansion into new districts.",
     color: "bg-wrg-blue"
   }
 ];

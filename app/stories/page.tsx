@@ -60,10 +60,16 @@ import Link from "next/link";
 export default function StoriesPage() {
   // const [featured, ...rest] = stories;
 
+  const topPerformers = [
+    { id: 1, name: "Anita Sharma", image: "/performers/performer1.jpg" },
+    { id: 2, name: "Rohit Kumar", image: "/performers/performer2.jpg" },
+    { id: 3, name: "Meera Patel", image: "/performers/performer3.jpg" },
+  ];
+
   return (
     <div>
       {/* Coming Soon */}
-      <section className="bg-white py-24 md:py-32 border-b border-wrg-border flex items-center justify-center min-h-screen">
+      {/* <section className="bg-white py-24 md:py-32 border-b border-wrg-border flex items-center justify-center min-h-screen">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-2 mb-6">
             <span className="h-0.5 w-6 bg-wrg-orange" />
@@ -74,6 +80,25 @@ export default function StoriesPage() {
           <p className="text-wrg-muted text-xl leading-relaxed">
             We're curating inspiring stories from our volunteers and communities. Check back soon for powerful tales of civic action and impact.
           </p>
+        </div>
+      </section> */}
+
+      {/* Top 3 Performers */}
+      <section className="py-16 bg-wrg-light border-b border-wrg-border">
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="text-wrg-muted font-bold text-xs uppercase tracking-widest mb-4">Top Performers</p>
+          <h2 className="text-3xl font-black text-wrg-dark mb-8">Our Top 3 Performers</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-start">
+            {topPerformers.map((p) => (
+              <div key={p.id} className="bg-white border border-wrg-border rounded-2xl p-6 text-center">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-wrg-light flex items-center justify-center">
+                  <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                </div>
+                <h3 className="text-lg font-black text-wrg-dark mb-1">{p.name}</h3>
+                <p className="text-wrg-muted text-sm">Volunteer Champion</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
