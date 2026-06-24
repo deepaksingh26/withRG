@@ -61,9 +61,9 @@ export default function StoriesPage() {
   // const [featured, ...rest] = stories;
 
   const topPerformers = [
-    { id: 1, name: "Anita Sharma", image: "/performers/performer1.jpg" },
-    { id: 2, name: "Rohit Kumar", image: "/performers/performer2.jpg" },
-    { id: 3, name: "Meera Patel", image: "/performers/performer3.jpg" },
+    { id: 1, name: "Ramesh Sanapala", image: "/performers/performer1.jpg" },
+    { id: 2, name: "Rajkumar", image: "/performers/performer2.jpg" },
+    { id: 3, name: "Ghanshyam Fhulara", image: "/performers/performer3.jpg" },
   ];
 
   return (
